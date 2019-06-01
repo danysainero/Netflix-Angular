@@ -1,0 +1,90 @@
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  border: 2px solid white;
+  
+}
+
+.slide-carousel{
+  display: flex;
+  overflow: hidden;
+}
+
+.slide-carousel figure {
+  position: relative;
+  outline: 0;
+}
+
+
+
+
+/* .slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  color: #fff;
+} */
+
+
+
+
+
+
+
+
+
+
+
+.coy{
+
+
+.slider {
+  overflow: hidden;
+  display: flex;
+}
+
+.slider__area {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  left: 0;  
+  flex-wrap: no-wrap;
+}
+
+.moveLeft { 
+  height: 50px;
+  width: 50px;
+  margin: auto 0;
+  background-color: transparent;
+  border: none;
+}
+.moveRight{
+  height: 50px;
+  width: 50px;
+  margin: auto 0;
+  background-color: transparent;
+  border: none;
+}
+
+.svgleftarrow{
+  fill: white;
+}
+
+.svgrightarrow {
+  fill: white;
+}
+
+.fadeLeft{
+  animation-name: move;
+  animation-duration: 1.5s;
+}
+
+.fadeRight{
+  animation-name: move;
+  transform: translatex(-200px);
+  animation-duration: 1.5s;
+}
+@keyframes move {
+ 
+}
+}

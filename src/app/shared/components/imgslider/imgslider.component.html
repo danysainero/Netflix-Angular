@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="slide-carousel">
+    <figure *ngFor="let chapter of ServiceService.getChapters()">
+      <app-chapter-card [chapter]="chapter"></app-chapter-card>
+      
+    </figure>
+    <figure *ngFor="let chapter of ServiceService.getChapters()">
+      <app-chapter-card [chapter]="chapter"></app-chapter-card>
+    </figure>
+    <figure *ngFor="let chapter of ServiceService.getChapters()">
+      <app-chapter-card [chapter]="chapter"></app-chapter-card>
+    </figure>
+    <figure *ngFor="let chapter of ServiceService.getChapters()">
+      <app-chapter-card [chapter]="chapter"></app-chapter-card>
+    </figure>
+    <figure *ngFor="let chapter of ServiceService.getChapters()">
+      <app-chapter-card [chapter]="chapter"></app-chapter-card>
+    </figure>
+    <figure *ngFor="let chapter of ServiceService.getChapters()">
+      <app-chapter-card [chapter]="chapter"></app-chapter-card>
+    </figure>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="slider" >
+  <button type="button" (click)="moveLeft()" class="moveLeft"><svg class="svgleftarrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"><path d="M88.6 121.3c.8.8 1.8 1.2 2.9 1.2s2.1-.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8 0l-54 53.9c-1.6 1.6-1.6 4.2 0 5.8l54 53.9z"/></svg></button>
+  <figure class="slider__area" [ngClass]="{'fadeRight': right, 'left': left}">
+ <app-chapter-card *ngFor="let chapter of ServiceService.getChapters()" [chapter]="chapter"></app-chapter-card> 
+ <app-chapter-card *ngFor="let chapter of ServiceService.getChapters()" [chapter]="chapter"></app-chapter-card> 
+ <app-chapter-card *ngFor="let chapter of ServiceService.getChapters()" [chapter]="chapter"></app-chapter-card> 
+ <app-chapter-card *ngFor="let chapter of ServiceService.getChapters()" [chapter]="chapter"></app-chapter-card> 
+ <app-chapter-card *ngFor="let chapter of ServiceService.getChapters()" [chapter]="chapter"></app-chapter-card> 
+  <app-chapter-card *ngFor="let chapter of ServiceService.getChapters()" [chapter]="chapter"></app-chapter-card> 
+  <app-chapter-card *ngFor="let chapter of ServiceService.getChapters()" [chapter]="chapter"></app-chapter-card> 
+  <app-chapter-card *ngFor="let chapter of ServiceService.getChapters()" [chapter]="chapter"></app-chapter-card> 
+  </figure>
+  <button (click)="moveRight()"  type="button" class="moveRight"><svg class="svgrightarrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"><path d="M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z"/></svg></button>
+  </div> -->
