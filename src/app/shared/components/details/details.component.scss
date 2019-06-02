@@ -7,40 +7,7 @@
     /* borrar */
   }
   
-  .close{
-    position: absolute;
-    right: 0;
-    top: 0;
-    height:35px;
-    width: 35px;
-    margin: 2px 20px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-
-    .svgclose{
-    fill: white;
-    }
-  }
   
-  .mute{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height:35px;
-    width: 35px;
-    margin: 50px 20px;
-    background-color: rgba(2, 2, 2, 0.925);;
-    border: 1px solid white;
-    border-radius: 50%;
-    outline: none;
-    cursor: pointer;
-
-    svg{
-    fill: white;
-    }
-  }
   
   
   

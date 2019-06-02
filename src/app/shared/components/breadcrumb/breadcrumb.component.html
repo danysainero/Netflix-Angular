@@ -1,7 +1,7 @@
 <ul class="breadcrumb">
-  <li><a href="#">Información General</a><span></span></li>
-  <li><a href="#">Episodios</a><span></span></li>
-  <li><a href="#">Traíleres y más</a><span></span></li>
-  <li><a href="#">Similares</a><span></span></li>
-  <li><a href="#">detalles</a><span></span></li>
+  <li><a  href="#"  (clicked)='true'>Información General</a><span *ngIf="clicked"></span></li>
+  <li><a href="#" (click)="clicked2 = !clicked2" >Episodios</a><span *ngIf="clicked2"></span></li>
+  <li><a href="#" (click)="clicked3 = !clicked3" >Traíleres y más</a><span *ngIf="clicked3"></span></li>
+  <li><a href="#" (click)="clicked4 = !clicked4" >Similares</a><span *ngIf="clicked4"></span></li>
+  <li><a href="#" (click)="clicked5 = !clicked5" >detalles</a><span *ngIf="clicked5"></span></li>
 </ul>

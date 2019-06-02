@@ -68,7 +68,12 @@ BLOQUE CON LA INFO
   cursor: pointer;
   display: inline-flex;
   justify-content: space-between;
+  transition: all .1s linear;
 
+  &:hover {
+    transform: scale(1.05);
+    transition: all .1s linear;
+  }
   svg {
     fill: white;
     display: inline-block;
@@ -77,6 +82,8 @@ BLOQUE CON LA INFO
     margin-right: 10px;
   }
 }
+
+
 
 .btn--mylist {
   box-sizing: border-box;
@@ -89,6 +96,12 @@ BLOQUE CON LA INFO
   display: inline-flex;
   justify-content: space-between;
   padding: rem(10px 20px);
+  transition: all .1s linear;
+  &:hover {
+    transform: scale(1.05);
+    transition: all .1s linear;
+  }
+
   svg{
     fill: white;
     display: inline-block;
@@ -106,6 +119,13 @@ BLOQUE CON LA INFO
   height: rem(40px);
   background-color: transparent; 
   padding:0;
+    transition: all .1s linear;
+
+  &:hover {
+    border: rem(2px) solid rgba(255, 255, 255, 0.979);
+    transform: scale(1.08);
+    transition: all .1s linear;
+  }
 
   svg{
       fill: white;
@@ -148,4 +168,44 @@ BLOQUE VIDEO
   height: 37vw;
   width: 90%;
   box-shadow: inset 152px -35px 31px 13px rgb(0, 0, 0);
+}
+
+.close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height:35px;
+  width: 35px;
+  margin: 2px 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  .svgclose{
+  fill: white;
+  }
+}
+
+.mute{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height:35px;
+  width: 35px;
+  margin: 50px 20px;
+  background-color: rgba(2, 2, 2, 0.925);;
+  border: 1px solid white;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all .1s linear;
+  }
+
+  svg{
+  fill: white;
+  }
 }
