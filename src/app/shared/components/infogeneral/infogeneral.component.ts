@@ -12,9 +12,9 @@ export class InfogeneralComponent implements OnInit {
 
   public chapters = this.ServiceService.getChapters();
   public chapter = this.chapters[0];
-
   ngOnInit() {
-     /* document.getElementById("video").volume = 0;   */
+   /*  let video = <HTMLVideoElement> document.getElementById('video');
+    video.volume = 0;   */
   }
 
 }

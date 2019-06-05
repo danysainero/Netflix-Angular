@@ -1,8 +1,85 @@
-.chapter-logo{
-    background: url(../../../../assets/images/logo-narcos.webp) no-repeat;
-    position: relative;
-    display: inline-block;
-    height: 10vw;
-    width: 50%;
-    margin: 25px 0 0 65px;
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
+
+.chapter-logo {
+  background: url(../../../../assets/images/logo-narcos.webp) no-repeat;
+  position: relative;
+  display: inline-block;
+  height: 8vw;
+  width: 50%;
+  margin: 25px 0 0 45px;
+}
+
+.dropDown {
+  position: relative;
+  width: 170px;
+  height: 30px;
+  color: white;
+  border: 1px solid white;
+  margin: 10px 45px;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  & input:focus {
+    outline: none;
+  }
+}
+
+.label {
+  padding-left: 5px;
+}
+
+.arrow {
+  border-color: #fff transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  height: 0;
+  position: absolute;
+  right: 10px;
+  top: 44%;
+}
+
+.dropDown__sub-menu {
+  position: absolute;
+  top: 110%;
+  width: 170px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.692);
+  cursor: pointer;
+
+  & a {
+    line-height: 2;
+    color: white;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+
+
+/* .seasons-select{
+    height: 35px;
+    text-align: left;
+    width: 170px;    
+    margin: 10px 45px;
+    color: white;
+    background-color: transparent;
+    font-size: 18px;
+    outline: none;
+    
+  }
+
+  .seasons-select *{
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    &::placeholder{
+        background-color: black;
+    }
+  } */

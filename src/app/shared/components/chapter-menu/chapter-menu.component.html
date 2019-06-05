@@ -1,6 +1,30 @@
-<div class="chapter-logo">
-  
+<div class="container">
+
+
+  <div class="chapter-logo">
+
+  </div>
+
+  <div class="dropDown" (click)="open()" >
+    <div  class="label" role="button">Temporada 1
+        <span class="arrow"></span>
+    </div>
+    <div *ngIf="dropDownclicked" class="dropDown__sub-menu">
+      <ul class="sub-menu__list">
+        <li ><a href="#">Temporada 2</a></li>
+        <li ><a href="#">Temporada 3</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- 
+<select class="seasons-select">
+    <option class="seasons-select__option" value="1">Temporada 1</option>
+    <option class="seasons-select__option" value="2">Temporada 2</option>
+  </select> -->
+
+  <app-imgslider></app-imgslider>
+
+
 </div>
-
-
-<app-imgslider></app-imgslider>

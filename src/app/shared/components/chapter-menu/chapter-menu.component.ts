@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChapterMenuComponent implements OnInit {
 
+  public dropDownclicked: boolean;
+
+
   constructor() { }
 
   ngOnInit() {
+  }
+  public open() {
+   
+
+    this.dropDownclicked = !this.dropDownclicked;
+    console.log(this.dropDownclicked);
+    
   }
 
 }
