@@ -1,12 +1,6 @@
 import { Injectable } from '@angular/core';
 
-<<<<<<< HEAD
 @Injectable()
-=======
-@Injectable({
-  providedIn: 'root'
- })
->>>>>>> details
 export class ServiceService {
 
   items: Array<any> = [{

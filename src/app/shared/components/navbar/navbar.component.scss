@@ -1,5 +1,9 @@
+@import '../../../../assets/styles/rem';
+
 .navbar {
-  //position: fixed;
+
+  position: fixed;
+  top:0;
   width: 100%;
   padding: rem(33px);
   margin: 0 auto;
@@ -8,6 +12,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  z-index: 99;
 }
 .bg-dark{
   transition: .3s;

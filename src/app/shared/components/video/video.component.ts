@@ -12,7 +12,7 @@ export class VideoComponent implements OnInit {
   constructor() { }
   check: boolean;
   video = document.getElementsByClassName;
-
+infoshow = false;
 
   ngOnInit() {
 
@@ -60,6 +60,10 @@ export class VideoComponent implements OnInit {
   }
 
   fullScreen($event) {
+  }
+
+  showInfo(){
+    this.infoshow = !this.infoshow;
   }
 
 }
