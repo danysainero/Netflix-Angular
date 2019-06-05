@@ -12,14 +12,10 @@ import { ServiceService } from './shared/services/service.service';
 
 @NgModule({
   declarations: [
-<<<<<<< HEAD
     AppComponent,
     VideoComponent,
     CarouselComponent,
     MediaComponent
-=======
-    AppComponent
->>>>>>> navbar
   ],
   imports: [
     BrowserModule,
