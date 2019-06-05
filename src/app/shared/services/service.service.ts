@@ -1,6 +1,12 @@
 import { Injectable } from '@angular/core';
 
+<<<<<<< HEAD
 @Injectable()
+=======
+@Injectable({
+  providedIn: 'root'
+ })
+>>>>>>> details
 export class ServiceService {
 
   items: Array<any> = [{
@@ -26,8 +32,8 @@ export class ServiceService {
       genre2: 'Drama TV',
       genre3: 'Policiaca'
     },
-    logo: '../breaking-bad-logo.webp',
-    video: 'https://www.youtube.com/embed/rJnjxvgvkBM?start=16'
+    logo: '../../../assets/images/logo-breaking-bad.webp',
+    video: '../../../assets/video/video_breaking-bad.mp4' 
   },
   {
     title: 'Narcos',
@@ -52,11 +58,15 @@ export class ServiceService {
       genre2: 'Drama',
       genre3: 'Fantasy'
     },
-    logo: '../narcos-logo.webp',
+    logo: '../../../assets/images/logo-narcos.webp',
     video: 'https://www.youtube.com/embed/eHdRMOAT-Lc?start=10'
   }
 ]
 
 
   constructor() { }
+
+  getChapters(){
+    return this.items;
+}
 }

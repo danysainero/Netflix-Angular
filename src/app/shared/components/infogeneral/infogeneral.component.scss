@@ -1,0 +1,211 @@
+@import '../../../../assets/styles/rem';
+
+/************************************
+BLOQUE CON LA INFO
+********************************/
+
+.container--information {
+  width: 50vw;
+}
+
+
+
+.information {  
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.993) 0%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
+  height: 37vw;
+  position: relative;
+  width: rem(575px);
+  padding: rem(20px 0 12px 55px);
+}
+
+/************* texto bajo logo*******************************/
+
+.information span {
+  color: #ffffff;
+  display: inline-block;
+  margin-right: rem(10px);
+  font-weight: normal;
+  padding: rem(15px 0 5px 0);
+}
+
+.information>span:nth-of-type(1) {
+  color: #46d369;
+  display: inline-block;
+  font-weight: bold;
+  padding-right: rem(10px);
+  margin-bottom: rem(20px);
+  font-size: var(--font-size-lg);
+}
+
+.information span:nth-of-type(3) {
+  border: rem(1px) solid rgba(255, 255, 255, 0.459);
+  text-align: center;
+  padding: rem(5px 5px 0);
+}
+
+
+
+/************* sinopsis*******************************/
+
+.information p {
+  color: #ffffffb6;
+  font-size: rem(20px);
+}
+
+/************* buttons group *******************************/
+.btn {
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: rem(10px 15px);
+  margin: rem(15px 20px 15px 0);
+}
+
+.btn--play {
+  background-color: #e50914;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: space-between;
+  transition: all .1s linear;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all .1s linear;
+  }
+  svg {
+    fill: white;
+    display: inline-block;
+    height: rem(17px);
+    width: rem(17px);
+    margin-right: 10px;
+  }
+}
+
+
+
+.btn--mylist {
+  box-sizing: border-box;
+  background-color: transparent;
+  cursor: pointer;
+  border-style: inset;
+  border: rem(1px) solid rgba(255, 255, 255, 0.486);
+  margin: 0;
+  margin-right: rem(30px);
+  display: inline-flex;
+  justify-content: space-between;
+  padding: rem(10px 20px);
+  transition: all .1s linear;
+  &:hover {
+    transform: scale(1.05);
+    transition: all .1s linear;
+  }
+
+  svg{
+    fill: white;
+    display: inline-block;
+    margin-right: 10px;
+    height: rem(17px);
+    width: rem(17px); 
+  }
+}
+
+.btn--vote {
+  cursor: pointer;
+  border: rem(2px) solid rgba(255, 255, 255, 0.363);
+  border-radius: 50%;
+  width: rem(40px);
+  height: rem(40px);
+  background-color: transparent; 
+  padding:0;
+    transition: all .1s linear;
+
+  &:hover {
+    border: rem(2px) solid rgba(255, 255, 255, 0.979);
+    transform: scale(1.08);
+    transition: all .1s linear;
+  }
+
+  svg{
+      fill: white;
+      width: rem(20px);
+      height: rem(20px);
+      margin: 0; 
+      padding:0;
+  }
+}
+
+/************* Tabs  *******************************/
+.information ul {
+  margin: 0;
+  padding: 0;
+  font-size: 1vw;
+  list-style: none;
+  color: #ffffffc7;
+  line-height: 1.5;
+margin-bottom: 5px;
+
+li{
+  color: var(--grey-dark);
+  font-weight: bold;
+}
+  a {
+    text-decoration: none;  color: var(--grey-dark);
+    font-weight: lighter;
+  }
+}
+
+/************************************
+BLOQUE VIDEO
+********************************/
+.video {
+  z-index: -9;
+  position: absolute;
+  right: rem(0px);
+  bottom: 0;
+  top: 0;
+  height: 37vw;
+  width: 90%;
+  box-shadow: inset 152px -35px 31px 13px rgb(0, 0, 0);
+}
+
+.close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height:35px;
+  width: 35px;
+  margin: 2px 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  .svgclose{
+  fill: white;
+  }
+}
+
+.mute{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height:35px;
+  width: 35px;
+  margin: 50px 20px;
+  background-color: rgba(2, 2, 2, 0.925);;
+  border: 1px solid white;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all .1s linear;
+  }
+
+  svg{
+  fill: white;
+  }
+}

@@ -1,0 +1,90 @@
+@import '../../../../assets/styles/rem';
+
+
+
+.chapter {
+  width: 285px;
+  margin: 0 30px;
+
+
+  &:hover .btn--play {
+    visibility: visible;
+  }
+  &:hover .btn--play {
+    visibility: visible;
+  }
+}
+
+.chapter:first-of-type{
+  margin-left: 0;
+}
+
+
+.chapter__media {
+  position: relative;
+
+  & img {
+    width: 100%;
+  }
+
+  &::before {
+    content: '1';
+    font-size: rem(30px);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 5px 10px;
+    font-weight: bold;
+  }
+}
+
+.chapter__info {
+  width: 100%;
+  color: white;
+  font-weight: normal;
+  font-size: rem(18px);
+}
+
+.info__header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: var(--font-size-lg);
+}
+
+.sinopsis{
+  color: #999;
+}
+
+.btn--play {
+  border: 2px solid rgba(255, 255, 255, 0.596);
+  background-color: transparent;
+  width: 70px;
+  height: 70px;
+  left: 100px;
+  top: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  transition: all .1s linear;
+  visibility: hidden;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.63);
+    transform: scale(1.06);
+    transition: all .1s linear;
+  }
+}
+
+
+
+.btn--play:hover svg {
+  fill: red;
+}
+
+svg {
+  fill: rgba(255, 255, 255, 0.596);
+  height: 55%;
+  width: 65px;
+}
