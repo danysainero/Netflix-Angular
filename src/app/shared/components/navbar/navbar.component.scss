@@ -1,9 +1,9 @@
 .navbar {
   //position: fixed;
   width: 100%;
-  padding: 33px;
+  padding: rem(33px);
   margin: 0 auto;
-  height: 56px;
+  height: rem(56px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,8 +25,8 @@
 }
 
 .logotipo {
-  width: 90px;
-  margin-right: 45px;
+  width: rem(90px);
+  margin-right: rem(45px);
 }
 
 ul {
@@ -35,23 +35,23 @@ ul {
 }
 .menu__item {
   font-size: var(--font-size-sm);
-  font-size: .8rem;
-  padding-right: 20px;
+  font-size: rem(0.8rem);
+  padding-right: rem(20px);
   color: #e5e5e5;
-  letter-spacing: 0.5px;
+  letter-spacing: rem(0.5px);
 }
 .search {
   position: relative;
-  margin-right: 20px;
+  margin-right: rem(20px);
 //  width: 100px;
 }
 
 .search-icon {
   fill: var(--white);
-  height: 20px;
+  height: rem(20px);
 }
 
 .search-icon--notify {
-  height: 27px;
-  margin-right: 11px;
+  height: rem(27px);
+  margin-right: rem(11px);
 }
