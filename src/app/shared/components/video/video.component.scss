@@ -1,71 +1,72 @@
 @import "../../../../assets/styles/rem";
 
-@keyframes showControls{
-  0%{
+:host {
+  display: inline-block;
+}
+
+@keyframes showControls {
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
 
-@keyframes prueba{
-  0%{
-    box-shadow: inset 0 -25px 25px rgba(0, 0, 0, 0),  0 0 0 2px rgba(0, 0, 0, 0);
+@keyframes prueba {
+  0% {
+    box-shadow: inset 0 -25px 25px rgba(0, 0, 0, 0), 0 0 0 2px rgba(0, 0, 0, 0);
   }
-  100%{
-    box-shadow: inset 0 -25px 25px rgba(0, 0, 0, 0.9),0 0 0 2px rgba(0, 0, 0, 1);
+  100% {
+    box-shadow: inset 0 -25px 25px rgba(0, 0, 0, 0.9), 0 0 0 2px rgba(0, 0, 0, 1);
   }
-
 }
 
-.media{
+.media {
   position: absolute;
   width: 100%;
-  height: 100%;
   opacity: 0;
-  transition: all 1500ms linear;
+  transition: all 400ms 250ms linear;
   border: 0;
 }
-.video__wrapper{
+
+/* .video__wrapper {
   position: absolute;
+  z-index: 5;
   width: 100%;
   height: 100%;
-}
-
+} */
 
 .wrapper {
+
+  margin: rem(0 2.5px 0);
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  //width: rem(245px);
-  //height: rem(137px);
+  width: rem(375px);
+  height: rem(205px);
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--white);
   font-weight: bold;
-  background-image: url("../../../../assets/images/bg-narcos.webp");
-  width: rem(470px);
-  height: rem(265px);
-  //box-shadow:
-  transform: scale(.5);
-  transition: transform 250ms ease;
-  transition-delay: 250ms;
-  &:hover {
-    transform: scale(1);
-    animation: prueba 250ms linear 250ms 1 forwards;
+  background-image: url("../../../../assets/images/thumb-narcos.jpg");
+  transform-origin: center left;
+  transition: all 400ms linear;
 
+  &:hover {
+    transform: scale(1.8);
   }
+
   &:hover .video,
   &:hover .video__footer,
   &:hover .btn-controls {
-    animation: showControls 150ms linear 0s 1 forwards;
+    animation: showControls 150ms linear 250ms 1 forwards;
   }
-  &:hover .video__wrapper{
+  &:hover .video__wrapper {
     animation: prueba 250ms linear 250ms 1 forwards;
   }
-  &:hover .media{
+  &:hover  .media {
     opacity: 1;
     animation: prueba 250ms linear 250ms 1 forwards;
   }
@@ -74,7 +75,7 @@
 .video {
   opacity: 0;
   position: relative;
-  z-index: 10;
+  z-index: 5;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -87,6 +88,8 @@
   }
 
   &__body {
+    position: relative;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -95,7 +98,7 @@
 
   &__footer {
     position: relative;
-    z-index: 10;
+    z-index: 5;
     opacity: 0;
     padding-left: rem(10px);
     width: 100%;
@@ -110,33 +113,33 @@
   }
 
   &__title {
-    font-size: var(--font-size-lg);
-    margin-bottom: rem(3px);
+    font-size: calc(var(--font-size-lg) * 0.8);
+    margin-bottom: rem(5px);
   }
   &__percentage {
     margin-right: rem(8px);
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) * 0.8);
     color: var(--green);
   }
 
   &__age {
     display: inline-block;
     padding: rem(1px 3px);
-    margin-right: rem(10px);
+    margin-right: rem(12px);
     border: rem(1px solid var(--white));
     font-style: normal;
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) * 0.8);
   }
   &__detail {
     font-size: rem(18px);
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) * 0.8);
   }
 }
 
 .btn-controls {
   opacity: 0;
   position: absolute;
-  z-index: 10;
+  z-index: 5;
   right: 3%;
   bottom: 15%;
   display: flex;
@@ -164,9 +167,9 @@
 .icon {
   padding: rem(5px);
   fill: var(--white);
-  width: 20pt;
-  height: 20pt;
-  border: rem(1px solid rgba(255, 255, 255, 0.6));
+  width: 18pt;
+  height: 18pt;
+  border: rem(0.75px solid rgba(255, 255, 255, 0.6));
   border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   transition: all 250ms linear;
@@ -179,15 +182,16 @@
   }
 
   &--action {
+    width: 20.5pt;
+    height: 20pt;
+    border: rem(1px solid var(--white));
     fill: var(--white);
-    width: 23pt;
-    height: 23pt;
     transition: none;
   }
   &--lg {
     border: none;
-    width: 25pt;
-    height: 25pt;
+    width: 23pt;
+    height: 23pt;
     background-color: transparent;
     padding: 0;
     transition: none;
@@ -197,11 +201,11 @@
 .list {
   list-style: none;
   position: relative;
-  font-size: var(--font-size-base);
+  font-size: calc(var(--font-size-base) * 0.8);
   font-style: normal;
   &__item {
     display: inline-block;
-    color: var(--grey);
+    color: var(--white);
     & + & {
       margin-left: rem(14px);
     }

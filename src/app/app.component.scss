@@ -1,0 +1,21 @@
+app-video:hover ~ app-video {
+  transform: translate3d(80%, 0, 0);
+}
+
+.scroll {
+  width: 100%;
+  margin-top: 100px;
+  white-space: nowrap;
+  transition: all 400ms linear;
+  &:hover {
+    transform: translate3d(-100px, 0, 0);
+  }
+}
+app-video {
+  transition: all 400ms linear;
+}
+
+/* app-media{
+
+} */
+
