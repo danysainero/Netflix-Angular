@@ -7,10 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MediaComponent implements OnInit {
 
+
   constructor() { }
 
   @Input() aviso: boolean;
   ngOnInit() {
+    
   }
   play($event) {
     if (this.aviso) {

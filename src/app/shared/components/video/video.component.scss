@@ -1,5 +1,6 @@
 @import "../../../../assets/styles/rem";
 
+
 :host {
   display: inline-block;
 }
@@ -37,8 +38,9 @@
   height: 100%;
 } */
 
-.wrapper {
 
+
+.wrapper {
   margin: rem(0 2.5px 0);
   position: relative;
   display: flex;
@@ -53,9 +55,8 @@
   background-image: url("../../../../assets/images/thumb-narcos.jpg");
   transform-origin: center left;
   transition: all 400ms linear;
-
   &:hover {
-    transform: scale(1.8);
+    transform: scale(1.3);
   }
 
   &:hover .video,

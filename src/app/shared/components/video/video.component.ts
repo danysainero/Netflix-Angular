@@ -1,4 +1,4 @@
-import { Component,Output, OnInit, EventEmitter } from '@angular/core';
+import { Component,Output, OnInit, EventEmitter, ViewChild, ElementRef } from '@angular/core';
 import { ServiceService } from '../../services/service.service';
 
 
@@ -11,57 +11,40 @@ export class VideoComponent implements OnInit {
 
   constructor() { }
  
-
+  infoShow;
   check: boolean;
   video = document.getElementsByClassName;
 
-
-
-mensaje : string = 'hola';
-
+playing;
   ngOnInit() {
 
   }
 
   checkTrue($event) {
     this.check = true;
-    //console.log($event.target);
-    //console.log(this.check);
-    //let video = <HTMLVideoElement> document.getElementById('1');
-    //video.play();
-    //console.log('entraste');
+  
   }
   checkFalse($event) {
     this.check = false;
-
-    //console.log($event);
-    //console.log(this.check);
-    //console.log('saliste');
-
     let video = <HTMLVideoElement> document.getElementById('1');
     video.pause();
     video.currentTime=0;
   }
 
+  @ViewChild("myVideo") myVideo: ElementRef;
+  play(event) {
+    
+     this.myVideo.nativeElement.play();
 
-  play($event, check) {
-
-    if (this.check) {
-      //$event.target.play();
-      $event.target.loop = true;
-    }
-
-    //console.log($event.target);
-    //$event.target.play();
-    //$event.target.loop = true;
+    console.log( this.myVideo);
+    
+     /*  $event.target.play(); */
+      event.target.loop = true;
+   
   }
+  @ViewChild("myVideo") myVideo2: ElementRef;
   pause($event, check) {
-    if (!this.check) {
-      //console.log($event.target);
-      //$event.target.pause();
-      $event.target.currentTime = 0
-
-    }
+    this.myVideo2.nativeElement.pause(); 
   }
 
   fullScreen($event) {
@@ -70,6 +53,7 @@ mensaje : string = 'hola';
   @Output() info = new EventEmitter();
 
   showInfo(event){
+    this.infoShow = !this.infoShow
     this.info.emit(event);   
   }
 

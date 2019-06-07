@@ -3,18 +3,16 @@
 /************************************
 BLOQUE CON LA INFO
 ********************************/
-.container__media{
-  margin-top: rem(56px);
+.container__media{  
  
 }
 .container--information {
   width: 50vw;
   display: flex;
-  margin-top: rem(56px);
 }
 
 .information__logo{
-    margin-top: rem(56px);  
+    margin-top: rem(80px);  
 }
 
 .information {  
@@ -166,7 +164,7 @@ li{
 BLOQUE VIDEO
 ********************************/
 .video {
-  margin-top: rem(56px);
+ 
   z-index: -9;
   position: absolute;
   right: rem(0px);
