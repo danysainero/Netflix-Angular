@@ -16,7 +16,7 @@ import { ChapterCardComponent } from './shared/components/chapters-card/chapter-
 import { BreadcrumbComponent } from './shared/components/breadcrumb/breadcrumb.component';
 import { ImgsliderComponent } from './shared/components/imgslider/imgslider.component';
 import { InfomainComponent } from './shared/components/infomain/infomain.component';
-
+import { TrailersComponent } from './shared/components/trailers/trailers.component';
 
 
 @NgModule({
@@ -33,7 +33,8 @@ import { InfomainComponent } from './shared/components/infomain/infomain.compone
     ChapterCardComponent,
     BreadcrumbComponent,
     ImgsliderComponent,
-    InfomainComponent
+    InfomainComponent,
+    TrailersComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,27 @@
+<div class="container">
+
+
+  <div class="chapter-logo"></div>
+
+  <div class="slide-carousel">
+    <figure *ngFor="let chapter of ServiceService.getChapters()">
+      <div class="chapter">
+        <div class="chapter__media">
+          <button class="btn--play" type="button">
+            <svg class="svgplay" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.999 41.999">
+              <path
+                d="M36.068 20.176l-29-20c-.307-.211-.705-.233-1.033-.062C5.706.287 5.5.627 5.5.999v40c0 .372.206.713.535.886.146.076.306.114.465.114.199 0 .397-.06.568-.177l29-20c.271-.187.432-.494.432-.823s-.162-.636-.432-.823z" />
+            </svg></button>
+          <img src="../../../../assets/images/thumb-narcos.jpg" alt="descripción del capítulo">
+        </div>
+        <div class="chapter__info">
+          <div class="info__header">
+            <span>
+              {{chapter.title}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+</div>

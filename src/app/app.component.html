@@ -1,15 +1,24 @@
-<app-navbar></app-navbar>
+<!-- <app-navbar></app-navbar> -->
 
 <app-infomain></app-infomain>
 
 <div class="scroll">
-  <app-video></app-video>
-  <app-video></app-video>
-  <app-video></app-video>
-  <app-video></app-video>
-  <app-video></app-video>
+  <app-video (info)="OnInfoShow($event)"></app-video>
+  <app-video (info)="OnInfoShow($event)"></app-video>
+  <app-video (info)="OnInfoShow($event)"></app-video>
+  <app-video (info)="OnInfoShow($event)"></app-video>
+  <app-video (info)="OnInfoShow($event)"></app-video>
 </div>
-<app-details></app-details>
+<app-details *ngIf="infoShow" (close)="OnClose($event)" ></app-details>
+
+<div class="scroll">
+  <app-video (info)="OnInfoShow2($event)"></app-video>
+  <app-video (info)="OnInfoShow2($event)"></app-video>
+  <app-video (info)="OnInfoShow2($event)"></app-video>
+  <app-video (info)="OnInfoShow2($event)"></app-video>
+  <app-video (info)="OnInfoShow2($event)"></app-video>
+</div>
+<app-details *ngIf="infoShow2" (close)="OnClose2($event)" ></app-details>
 
 <div class="scroll">
   <app-video></app-video>
@@ -18,5 +27,12 @@
   <app-video></app-video>
   <app-video></app-video>
 </div>
-
-<app-details></app-details>
+<app-details *ngIf="infoShow2" (close)="OnClose2($event)" ></app-details>
+<div class="scroll">
+  <app-video></app-video>
+  <app-video></app-video>
+  <app-video></app-video>
+  <app-video></app-video>
+  <app-video></app-video>
+</div>
+<app-details *ngIf="infoShow2" (close)="OnClose2($event)" ></app-details>

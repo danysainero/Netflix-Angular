@@ -4,7 +4,6 @@
 BLOQUE CON LA INFO
 ********************************/
 .container__media{
-  margin-top: rem(56px);
 }
 .container--information {
   width: 50vw;
@@ -170,23 +169,6 @@ BLOQUE VIDEO
   height: 37vw;
   width: 90%;
   box-shadow: inset 152px -35px 31px 13px rgb(0, 0, 0);
-}
-
-.close{
-  position: absolute;
-  right: 0;
-  top: 0;
-  height:35px;
-  width: 35px;
-  margin: 2px 20px;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-
-  .svgclose{
-  fill: white;
-  }
 }
 
 .mute{

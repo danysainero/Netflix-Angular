@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { ServiceService } from '../../services/service.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { ServiceService } from '../../services/service.service';
 })
 export class InfogeneralComponent implements OnInit {
 
+  infoShow: boolean;
   constructor(private ServiceService: ServiceService) { }
 
   public chapters = this.ServiceService.getChapters();
@@ -16,5 +17,7 @@ export class InfogeneralComponent implements OnInit {
    /*  let video = <HTMLVideoElement> document.getElementById('video');
     video.volume = 0;   */
   }
+
+  
 
 }

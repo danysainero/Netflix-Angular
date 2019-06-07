@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Output, OnInit, EventEmitter } from '@angular/core';
 import { ServiceService } from '../../services/service.service';
 
 
@@ -10,9 +10,14 @@ import { ServiceService } from '../../services/service.service';
 export class VideoComponent implements OnInit {
 
   constructor() { }
+ 
+
   check: boolean;
   video = document.getElementsByClassName;
-infoshow = false;
+
+
+
+mensaje : string = 'hola';
 
   ngOnInit() {
 
@@ -42,7 +47,7 @@ infoshow = false;
   play($event, check) {
 
     if (this.check) {
-      $event.target.play();
+      //$event.target.play();
       $event.target.loop = true;
     }
 
@@ -53,7 +58,7 @@ infoshow = false;
   pause($event, check) {
     if (!this.check) {
       //console.log($event.target);
-      $event.target.pause();
+      //$event.target.pause();
       $event.target.currentTime = 0
 
     }
@@ -62,8 +67,10 @@ infoshow = false;
   fullScreen($event) {
   }
 
-  showInfo(){
-    this.infoshow = !this.infoshow;
+  @Output() info = new EventEmitter();
+
+  showInfo(event){
+    this.info.emit(event);   
   }
 
 }
